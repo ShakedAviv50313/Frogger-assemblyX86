@@ -1,0 +1,31 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="bcc70cc4-703d-4f8b-98f5-d96bfc71335b" Version="1.4.12" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>XNA Game Studio 4.0</DisplayName>
+    <Description xml:space="preserve">XNA Game Studio Package provides game development experiences for Xbox 360, Windows, and Windows Phone.</Description>
+    <License>xnags_setup.EULA.rtf</License>
+    <Icon>Package.ico</Icon>
+    <Tags>Xna Game Studio Tool</Tags>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Version="[14.0]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[14.0]" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0]" Id="Microsoft.VisualStudio.Premium" />
+    <InstallationTarget Version="[14.0]" Id="Microsoft.VisualStudio.Ultimate" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" Version="[12.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="XNA Game Studio 4.0.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.Xna.GameStudio.Core.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.Xna.GameStudio.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.Xna.VisualBasic.PropertyPages.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.Xna.GameStudio.Core.dll" AssemblyName="Microsoft.Xna.GameStudio.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.Xna.GameStudio.dll" AssemblyName="Microsoft.Xna.GameStudio, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.Xna.VisualBasic.PropertyPages.dll" AssemblyName="Microsoft.Xna.VisualBasic.PropertyPages, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+  </Assets>
+</PackageManifest>
